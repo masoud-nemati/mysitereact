@@ -1,0 +1,30 @@
+
+.diamond-table {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 200px; /* می‌توانید اندازه را به دلخواه تغییر دهید */
+    height: 200px; /* می‌توانید اندازه را به دلخواه تغییر دهید */
+    transform: rotate(45deg);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .diamond-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: gray; /* می‌توانید رنگ پس‌زمینه را تغییر دهید */
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-45deg);
+    font-size: 14px; /* می‌توانید اندازه فونت را تغییر دهید */
+  }
+  
+  .diamond-cell a {
+    color: white;
+    text-decoration: none;
+  }

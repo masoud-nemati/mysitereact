@@ -1,0 +1,64 @@
+.skills-page {
+  background-image: url('../images/bodyimg.jpg');
+  display: flex;
+  flex-direction: column; /* چینش عمودی */
+  align-items: center; /* مرکز کردن به صورت افقی */
+  min-height: 100vh; /* ارتفاع حداقل 100% از ویوپورت برای مرکز کردن عمودی */
+  padding: 20px;
+  
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap; /* اجازه به رفتن به خط بعدی در صورت لزوم */
+  gap: 100px; 
+  justify-content: center; 
+}
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff; /* رنگ ثابت سفید */
+  border-radius: 10px;
+  padding: 20px;
+  height: 150px;
+  width: 250px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* سایه تیره‌تر برای برجسته‌تر شدن */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* حاشیه سبک برای تفکیک بهتر */
+}
+.skill-card:hover{
+
+background-color: rgb(214, 189, 158);
+cursor: pointer;
+
+}
+
+.meter{
+
+width: 220px;
+
+}
+.skill-logo {
+
+  width: 50px;
+  height: 50px;
+  margin-bottom: 30px;
+}
+
+
+.skill-name:hover{
+
+font-size: 1.5rem;
+color: red;
+
+
+}
+.meter:hover{
+
+  background-color: green;
+}
+.skill-level:hover{
+  color: red;
+  font-size: 1.5rem;
+}
