@@ -2,34 +2,43 @@
 
 import React, { Component } from 'react';
 import img1 from "../images/slaidimg.jpg";
+import img2 from "../images/bodyimg.jpg";
+import img3 from "../images/davood.3.jpg"
 import "../styles/imagesstyle.css";
 
 class Image extends Component {
     constructor() {
         super();
         this.state = {
-            flag: true
+            currentIndex: 0, // ایندکس تصویر فعلی
+            images: [img1, img2, img3], // آرایه‌ای از تصاویر
+            showImage: true // کنترل نمایش تصویر
         };
     }
 
-    changestateimg = () => {
-        const { flag } = this.state;
-        this.setState({ flag: !flag });
+    changeImage = () => {
+        this.setState(prevState => ({
+            currentIndex: (prevState.currentIndex + 1) % prevState.images.length // رفتن به تصویر بعدی
+        }));
+    }
+
+    toggleImage = () => {
+        this.setState(prevState => ({
+            showImage: !prevState.showImage
+        }));
     }
 
     render() {
         return (
             <>
-                {
-                    this.state.flag ? (
-                        <>
-                            <img className='img-heder' src={img1} alt='' />
-                            <button className='btn-hid' onClick={this.changestateimg}>hide</button>
-                        </>
-                    ) : (
-                        <button className='btn-img' onClick={this.changestateimg}>show</button>
-                    )
-                }
+                {this.state.showImage ? (
+                    <>
+                        <img className='img-heder' src={this.state.images[this.state.currentIndex]} alt='slideshow' onClick={this.changeImage} />
+                        <button className='btn-hid' onClick={this.toggleImage}>Hide</button>
+                    </>
+                ) : (
+                    <button className='btn-img' onClick={this.toggleImage}>Show</button>
+                )}
             </>
         );
     }
