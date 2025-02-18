@@ -7,6 +7,7 @@ import logwe from '../../src/logos/welder.png';
 import ligwork from '../../src/logos/work.png';
 import logohtml from '../../src/logos/html-5.png';
 import logjava from '../../src/logos/java-script.png';
+import logokotlin from '../../src/logos/th.jpeg'
 
 const skills =[
 
@@ -19,6 +20,7 @@ const skills =[
     { name: 'Editing', level: 70 }, 
     { name: 'Welding Project Management', level: 80,logo:ligwork }, 
     { name: 'Blueprint Reading and Welding Supervision', level: 85 },
+    {name: 'kotlin' , level: 50 , logo:logokotlin}
 ]
 
 const Skills = () => {
@@ -33,7 +35,7 @@ const Skills = () => {
                   key={index}
                   name={skill.name}
                   level={skill.level}
-                  logo={skill.logo ||logo1||logo2||logjava||logohtml||logwe||ligwork }
+                  logo={skill.logo ||logo1||logo2||logjava||logohtml||logwe||ligwork ||logokotlin }
                 />
               ))}
             </div>
