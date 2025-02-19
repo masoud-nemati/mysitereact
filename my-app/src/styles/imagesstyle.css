@@ -45,3 +45,36 @@ width: 70%;
     width: 70%;
 
 }
+
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.img-heder {
+    width: 1200px; /* عرض ثابت */
+    height: 500px; /* ارتفاع ثابت */
+    object-fit: cover; /* برای برش تصویر بدون تغییر نسبت */
+    border-radius: 8px; /* لبه‌های گرد (اختیاری) */
+}
+
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}

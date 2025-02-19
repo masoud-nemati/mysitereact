@@ -62,3 +62,22 @@ color: red;
   color: red;
   font-size: 1.5rem;
 }
+.h2skill {
+  font-size: 2rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.4)); /* پس‌زمینه شفاف و مدرن */
+  color: #fff; /* متن سفید برای خوانایی */
+  border-radius: 15px;
+  padding: 15px 30px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1); /* سایه برای جلوه بهتر */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* حاشیه نازک */
+  display: inline-block;
+
+}
+.h2skill:hover{
+  background-color: wheat;
+  color: red;
+}

@@ -27,17 +27,19 @@ class Image extends Component {
             showImage: !prevState.showImage
         }));
     }
-
     render() {
         return (
             <>
                 {this.state.showImage ? (
                     <>
-                        <img className='img-heder' src={this.state.images[this.state.currentIndex]} alt='slideshow' onClick={this.changeImage} />
-                        <button className='btn-hid' onClick={this.toggleImage}>Hide</button>
+                        <div className="image-container" onClick={this.changeImage}>
+                            <img className="img-heder" src={this.state.images[this.state.currentIndex]} alt="slideshow" />
+                            <div className="overlay">🔄 Click to Change</div> 
+                        </div>
+                        <button className="btn-hid" onClick={this.toggleImage}>Hide</button>
                     </>
                 ) : (
-                    <button className='btn-img' onClick={this.toggleImage}>Show</button>
+                    <button className="btn-img" onClick={this.toggleImage}>Show</button>
                 )}
             </>
         );

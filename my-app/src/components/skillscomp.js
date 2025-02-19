@@ -7,7 +7,9 @@ import logwe from '../../src/logos/welder.png';
 import ligwork from '../../src/logos/work.png';
 import logohtml from '../../src/logos/html-5.png';
 import logjava from '../../src/logos/java-script.png';
-import logokotlin from '../../src/logos/th.jpeg'
+import logokotlin from '../../src/logos/kotlin-logo.png'
+import logoedit from '../../src/logos/editingword.jpeg'
+import logogit from '../../src/logos/gitimage1.jpeg'
 
 const skills =[
 
@@ -17,10 +19,11 @@ const skills =[
     { name: 'CO2 Welding', level: 100 ,logo:logwe},  
     { name: 'Argon Welding', level: 60 ,logo:logwe},  
     { name: 'Laser Welding', level: 100 ,logo:logwe},  
-    { name: 'Editing', level: 70 }, 
+    { name: 'Editing', level: 70 , logo:logoedit }, 
     { name: 'Welding Project Management', level: 80,logo:ligwork }, 
-    { name: 'Blueprint Reading and Welding Supervision', level: 85 },
-    {name: 'kotlin' , level: 50 , logo:logokotlin}
+
+    {name: 'kotlin' , level: 50 , logo:logokotlin},
+    {name: 'gitup', level:60 , logo:logogit}
 ]
 
 const Skills = () => {
@@ -28,14 +31,14 @@ const Skills = () => {
 
      
           <div className="skills-page">
-            <h2>My Skills</h2>
+            <h2 className='h2skill'>My Skills</h2>
             <div className="skills-list">
               {skills.map((skill, index) => (
                 <SkillCard 
                   key={index}
                   name={skill.name}
                   level={skill.level}
-                  logo={skill.logo ||logo1||logo2||logjava||logohtml||logwe||ligwork ||logokotlin }
+                  logo={skill.logo ||logo1||logo2||logjava||logohtml||logwe||ligwork ||logokotlin||logoedit||logogit }
                 />
               ))}
             </div>

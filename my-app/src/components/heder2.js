@@ -13,11 +13,11 @@ const Header2 = ({ onLogout }) => {
         <div className="header-container">
             <nav>
                 <ul>
-                    <li className="border-li">
+                    {/* <li className="border-li">
                         <Link to="/home" aria-label="Home">
                             <i className="fas fa-home"></i>
                         </Link>
-                    </li>
+                    </li> */}
                     <li className="border-li">
                         <Link to="/about">About Us</Link>
                     </li>
@@ -36,8 +36,11 @@ const Header2 = ({ onLogout }) => {
                 </ul>
             </nav>
             <div className="header-logo">
-                <h1 className="logo-text">MySite</h1>
-            </div>
+    <Link to="/home" aria-label="Home">
+        <h1 className="logo-text">MySite</h1>
+    </Link>
+</div>
+
         </div>
     );
 };
