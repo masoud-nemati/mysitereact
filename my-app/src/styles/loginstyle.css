@@ -1,97 +1,98 @@
-/* * {
-    box-sizing: border-box;
-  } */
-  
+body{
+  background-color: #3a3a3a;
+}
 
-.login-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: #a4a4c8;
-  }
-  
-  .login-card {
-    background: #322f2f;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 70%;
-    height: auto; /* تغییر به auto برای جلوگیری از کشیدگی */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  
-  
-  .profile-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 70%;
-    margin-bottom: 20px;
-  }
-  
-  .profile-pic {
-    width: 300px; /* اندازه مناسب برای عکس */
-    height: 300px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-left: 0px;
-    margin-top: 50px;
-    border: 1px solid #ddd; /* اضافه کردن border برای زیبایی */
-  }
-  
-  .profile-info {
-    margin-left: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .profile-info, h1{
-    color: aliceblue;
-    font-size: 1.5rem;
-  }
 
 
 
-  .div-input-login{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 400px;
-    margin-bottom: 50px;
-    gap: 10px;
-  }
-  .div-input-login,h2{
-    color: #ff5722;
-  }
-  
-  input {
-    width: 300px;
-    
-    padding: 10px;
-    margin-bottom: 10px; /* کاهش فاصله پایین */
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  button {
-    width: 300px;
-   
-   
-    padding: 10px;
-    background:#ff5722 ;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background: #d47f00;
-  }
-  
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #3a3a3a;
+
+
+
+}
+
+.login-card {
+  background: #2d2b2b;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  width: 70%;
+  max-width: 900px;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* پروفایل و عکس */
+.profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+  gap: 20px; /* فاصله بین عکس و نام */
+}
+
+/* تنظیمات اطلاعات پروفایل */
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+/* تصویر پروفایل */
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+}
+
+/* ورودی و دکمه‌ها */
+.div-input-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+input {
+  width: 90%;
+  max-width: 320px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 1rem;
+}
+
+button {
+  width: 90%;
+  max-width: 320px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  background: #ff5722;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #d45a00;
+  transform: scale(1.05);
+}

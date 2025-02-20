@@ -42,29 +42,30 @@ nav ul {
 }
 
 nav a {
-    text-decoration: none;
-    color: red;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    transition: color 0.3s ease;
+    position: relative;
+    text-decoration: none; /* حذف خط پیش‌فرض */
+    color: rgb(21, 19, 19); /* رنگ پیش‌فرض لینک */
+    transition: color 0.3s ease-in-out;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* مقدار فاصله خط از متن */
+    width: 0;
+    height: 2px; /* ضخامت خط */
+    background-color: #5d0ac9;
+    transition: width 0.3s ease-in-out;
 }
 
 nav a:hover {
-    color: #ebe1e2;
+    color: #5d0ac9;
+    font-size: larger;
 }
 
-.border-li {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: hsl(0, 77%, 35%);
-    background-color: rgb(230, 233, 240);
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
-    text-align: center;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+nav a:hover::after {
+    width: 100%;
 }
 
 .border-li:hover {

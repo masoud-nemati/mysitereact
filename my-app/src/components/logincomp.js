@@ -17,7 +17,7 @@ const LoginPage = ({ onLogin }) => {
       <div className="profile-container">
         <div className="profile-info">
           <h2>masoud nemati</h2>
-          <p>masoudnemati.com</p>
+          <p></p>
         </div>
         <img className="img-login" src={profilePic} alt="Profile" className="profile-pic" />
         

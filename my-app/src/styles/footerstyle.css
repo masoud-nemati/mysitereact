@@ -1,16 +1,32 @@
 .footer-container {
     width: 100%;
-    background: #333;
+    background: #222;
     color: #fff;
-    padding: 20px;
+    padding: 30px 20px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    align-items: flex-start;
+    gap: 25px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     box-sizing: border-box;
+    text-align: left;
+    position: relative; /* برای استفاده از position در .footer-copyright */
 }
+
+.footer-copyright {
+    text-align: center; /* برای قرار دادن متن در وسط افقی */
+    position: absolute; /* قرار دادن در موقعیت ثابت */
+    bottom: 10px; /* فاصله از پایین فوتر */
+    left: 50%; /* قرار دادن از سمت چپ 50% */
+    transform: translateX(-50%); /* قرار دادن در وسط افقی */
+    width: 100%; /* عرض به اندازه کل فوتر */
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+
 
 .footer-logo {
     display: flex;
@@ -18,12 +34,12 @@
 }
 
 .footer-logo img {
-    height: 50px;
+    height: 60px;
     margin-right: 10px;
 }
 
 .footer-nav, .footer-contact, .footer-social, .footer-subscribe {
-    flex: 1 1 200px;
+    width: 100%;
 }
 
 .footer-nav ul, .footer-contact ul, .footer-social ul {
@@ -33,52 +49,58 @@
 
 .footer-nav a, .footer-contact a, .footer-social a {
     text-decoration: none;
-    color: #fff;
+    color: #ccc;
+    transition: color 0.3s ease, font-size 0.3s ease;
 }
 
 .footer-nav a:hover, .footer-contact a:hover, .footer-social a:hover {
-    color: #f3c4c4;
-    font-size: 1.2rem;
+    color: #00b894;
+    font-size: 1.1rem;
 }
 
 .footer-subscribe input[type="email"] {
-    padding: 5px;
-    margin-right: 5px;
+    padding: 8px 12px;
+    width: calc(100% - 24px); /* برای تنظیم عرض مشابه با دکمه */
+    margin: 10px 0;
     border-radius: 5px;
-    border: none;
+    border: 1px solid #777;
+    background: #333;
+    color: #fff;
+    box-sizing: border-box; /* برای در نظر گرفتن padding در عرض */
 }
 
 .footer-subscribe button {
-    padding: 5px 10px;
+    padding: 8px 12px;
     border-radius: 5px;
     border: none;
-    background: #444;
+    background: #f76c0a;
     color: #fff;
     cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%; /* دکمه عرض کامل داشته باشد */
+    box-sizing: border-box; /* برای در نظر گرفتن padding در عرض */
 }
 
 .footer-subscribe button:hover {
-    background: #ba6c6c;
+    background: #b98c1b;
 }
 
-.footer-copyright {
-    text-align: center;
+/* .footer-copyright {
+    text-align: left;
     margin-top: 20px;
-    flex-basis: 100%;
-}
-h4:hover{
-color: seagreen;
-font-size: 1.2rem;
+    width: 100%;
+    font-size: 0.9rem;
+    color: #bbb;
+} */
 
-
-
-}
+/* بخش شبکه‌های اجتماعی */
 .footer-social ul {
     list-style: none;
     padding: 0;
     display: flex;
-    flex-direction: column; /* قرار دادن آیتم‌ها به صورت عمودی */
-    gap: 10px; /* فاصله بین آیتم‌ها */
+    flex-direction: column; /* آیتم‌ها را زیر هم قرار بده */
+    align-items: flex-start; /* از سمت چپ شروع شود */
+    gap: 10px;
 }
 
 .footer-social li {
@@ -88,25 +110,50 @@ font-size: 1.2rem;
 
 .footer-social a {
     text-decoration: none;
-    color: #fff;
+    color: #ccc;
     display: flex;
     align-items: center;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .footer-social i {
-    font-size: 15px; /* اندازه آیکون‌ها */
-    margin-right: 8px; /* فاصله بین آیکون و متن */
+    font-size: 18px;
+    margin-right: 8px;
     color: red;
 }
 
 .footer-social a:hover {
-    color: #f3c4c4;
-    
+    color: #00b894;
+    transform: scale(1.1);
 }
-.input-footer:hover{
 
-background-color: rgb(225, 165, 212);
-cursor: pointer;
+/* افکت روی عنوان‌های بخش‌ها */
+h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+h4:hover {
+    color: #00b894;
+}
+
+/* حذف نیاز به ریسپانسیو، چون همه المان‌ها در حالت عادی ستونی هستند */
 
 
+/* تنظیمات برای موبایل */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-social ul {
+        flex-direction: column;
+    }
+
+    .footer-nav, .footer-contact, .footer-social, .footer-subscribe {
+        width: 100%;
+    }
 }

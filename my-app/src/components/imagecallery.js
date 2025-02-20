@@ -36,10 +36,11 @@ class Image extends Component {
                             <img className="img-heder" src={this.state.images[this.state.currentIndex]} alt="slideshow" />
                             <div className="overlay">🔄 Click to Change</div> 
                         </div>
-                        <button className="btn-hid" onClick={this.toggleImage}>Hide</button>
+                        {/* <button className="btn-hid" onClick={this.toggleImage}>Hide</button> */}
                     </>
                 ) : (
-                    <button className="btn-img" onClick={this.toggleImage}>Show</button>
+                    // <button className="btn-img" onClick={this.toggleImage}>Show</button>
+                    null
                 )}
             </>
         );
