@@ -1,4 +1,6 @@
 .header-container {
+    position: sticky; /* هنگام اسکرول در جای خود ثابت بماند */
+    top: 0; /* وقتی به بالای صفحه رسید فیکس شود */
     background: white;
     color: red;
     width: 80%;
@@ -11,7 +13,10 @@
     align-items: center;
     padding: 0 20px;
     margin: 0 auto 30px auto;
+    z-index: 999; /* مطمئن می‌شویم که روی بقیه عناصر باشد */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* برای وضوح بیشتر */
 }
+
 
 .logo-text {
     font-size: 24px;

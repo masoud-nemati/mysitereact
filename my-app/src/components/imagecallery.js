@@ -3,7 +3,8 @@
 import React, { Component } from 'react';
 import img1 from "../images/slaidimg.jpg";
 import img2 from "../images/bodyimg.jpg";
-import img3 from "../images/davood.3.jpg"
+import img3 from "../images/davood.3.jpg";
+import img4 from "../images/image.jpg"
 import "../styles/imagesstyle.css";
 
 class Image extends Component {
@@ -11,7 +12,7 @@ class Image extends Component {
         super();
         this.state = {
             currentIndex: 0, // ایندکس تصویر فعلی
-            images: [img1, img2, img3], // آرایه‌ای از تصاویر
+            images: [img1, img2, img3,img4], // آرایه‌ای از تصاویر
             showImage: true // کنترل نمایش تصویر
         };
     }

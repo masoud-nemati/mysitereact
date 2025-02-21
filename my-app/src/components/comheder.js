@@ -17,7 +17,7 @@ class HEDER extends Component {
         return (
             <div className='heder-box'> 
                 
-                <h1>{name} {family}</h1>
+                <h1>{name}{family}</h1>
             </div>
         );
     }

@@ -1,6 +1,4 @@
-
-
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import Comheder from "./components/comheder";
 import Heder2 from "./components/heder2";
@@ -11,16 +9,35 @@ import AboutUs from './components/About Us';
 import LoginPage from './components/logincomp';
 import Skills from './components/skillscomp';
 import "./styles/appstyle.css";
-
+import "./styles/aboutstyle.css"
 
 const LocationBasedLayout = ({ onLogout }) => {
   const location = useLocation();
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   const showImageGallery = location.pathname === "/home";
+  
+  // استفاده از effect برای کنترل اسکرول
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+  
+      // اگر کاربر به انتهای صفحه رسید، اسکرول را متوقف می‌کنیم
+      if (scrollPosition >= documentHeight) {
+        window.scrollTo(0, documentHeight); // اسکرول را در انتها ثابت می‌کند
+      }
+    };
+  
+    window.addEventListener('scroll', handleScroll);
+  
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  
 
   return (
     <div className='app-style'>
-    
       <Comheder />
       <Heder2 onLogout={() => { 
         onLogout(); 
@@ -29,9 +46,12 @@ const LocationBasedLayout = ({ onLogout }) => {
       <Routes>
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
-        <Route path='/skills' element={<Skills/>}/>
+        <Route path='/skills' element={<Skills />} />
       </Routes>
       {showImageGallery && <Imagecallery />}
+      <div id="about-us">
+        <AboutUs />
+      </div>
       <Footer />
     </div>
   );
@@ -60,9 +80,3 @@ const App = () => {
 };
 
 export default App;
-
-
-
-
-
-
