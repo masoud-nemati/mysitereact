@@ -18,9 +18,9 @@ const Header2 = ({ onLogout }) => {
                             <i className="fas fa-home"></i>
                         </Link>
                     </li> */}
-                    <li className="border-li">
+                    {/* <li className="border-li">
                         <Link to="/about">About Us</Link>
-                    </li>
+                    </li> */}
                     <li className="border-li">
                         <Link to="/services">Services</Link>
                     </li>

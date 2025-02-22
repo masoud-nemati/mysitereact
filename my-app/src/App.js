@@ -8,33 +8,33 @@ import Home from './components/homecomp';
 import AboutUs from './components/About Us';
 import LoginPage from './components/logincomp';
 import Skills from './components/skillscomp';
+import CommentSection from './components/compsection';
 import "./styles/appstyle.css";
-import "./styles/aboutstyle.css"
+import "./styles/aboutstyle.css";
 
 const LocationBasedLayout = ({ onLogout }) => {
   const location = useLocation();
   const navigate = useNavigate();
-  const showImageGallery = location.pathname === "/home";
   
-  // استفاده از effect برای کنترل اسکرول
+  // فقط در صفحه home کامپوننت‌ها را نمایش می‌دهیم
+  const showAboutUsAndComments = location.pathname === "/home";
+  
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY + window.innerHeight;
       const documentHeight = document.documentElement.scrollHeight;
-  
-      // اگر کاربر به انتهای صفحه رسید، اسکرول را متوقف می‌کنیم
+
       if (scrollPosition >= documentHeight) {
         window.scrollTo(0, documentHeight); // اسکرول را در انتها ثابت می‌کند
       }
     };
-  
+
     window.addEventListener('scroll', handleScroll);
-  
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-  
 
   return (
     <div className='app-style'>
@@ -48,10 +48,16 @@ const LocationBasedLayout = ({ onLogout }) => {
         <Route path="/about" element={<AboutUs />} />
         <Route path='/skills' element={<Skills />} />
       </Routes>
-      {showImageGallery && <Imagecallery />}
-      <div id="about-us">
-        <AboutUs />
-      </div>
+
+      {/* فقط در صفحه home نمایش داده می‌شود */}
+      {showAboutUsAndComments && (
+        <>
+          <Imagecallery />
+          <AboutUs />
+          <CommentSection />
+        </>
+      )}
+
       <Footer />
     </div>
   );

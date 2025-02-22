@@ -1,6 +1,6 @@
 .img-heder{
     margin-bottom: 20px;
-    width: 80%;
+    width: 1300px;
     height: 500px;
     box-shadow: 0px 4px 8px #fffefcff;
     border-radius: 50px;
@@ -48,14 +48,15 @@ width: 70%;
 
 
 .image-container {
+    width: 1300px;
     position: relative;
     display: inline-block;
     cursor: pointer;
 }
 
 .img-heder {
-    width: 1200px; /* عرض ثابت */
-    height: 500px; /* ارتفاع ثابت */
+    width: 1300x; /* عرض ثابت */
+    height: 600x; /* ارتفاع ثابت */
     object-fit: cover; /* برای برش تصویر بدون تغییر نسبت */
     border-radius: 8px; /* لبه‌های گرد (اختیاری) */
 }
