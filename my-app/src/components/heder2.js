@@ -36,10 +36,10 @@ const Header2 = ({ onLogout }) => {
                 </ul>
             </nav>
             <div className="header-logo">
-    <Link to="/home" aria-label="Home">
-        <h1 className="logo-text">MySite</h1>
-    </Link>
-</div>
+                <Link to="/home" aria-label="Home">
+                    <h1 className="logo-text">MySite</h1>
+                </Link>
+            </div>
 
         </div>
     );

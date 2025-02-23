@@ -38,13 +38,13 @@ const LocationBasedLayout = ({ onLogout }) => {
 
   return (
     <div className='app-style'>
-      <Comheder />
+      {/* <Comheder /> */}
       <Heder2 onLogout={() => { 
         onLogout(); 
         navigate('/home'); 
       }} />
       <Routes>
-        <Route path="/home" element={<Home />} />
+        {/* <Route path="/home" element={<Home />} /> */}
         <Route path="/about" element={<AboutUs />} />
         <Route path='/skills' element={<Skills />} />
       </Routes>
