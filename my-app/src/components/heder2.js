@@ -22,7 +22,7 @@ const Header2 = ({ onLogout }) => {
                         <Link to="/about">About Us</Link>
                     </li> */}
                     <li className="border-li">
-                        <Link to="/services">Services</Link>
+                        <Link to="/ArticlePage">ArticlePage</Link>
                     </li>
                     <li className="border-li">
                         <Link to="/skills">Skills</Link>

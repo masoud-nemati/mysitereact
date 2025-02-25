@@ -11,9 +11,9 @@ class Image extends Component {
     constructor() {
         super();
         this.state = {
-            currentIndex: 0, // ایندکس تصویر فعلی
-            images: [img1, img2, img3,img4], // آرایه‌ای از تصاویر
-            showImage: true // کنترل نمایش تصویر
+            currentIndex: 0, 
+            images: [ img2, img3,img4,img1], 
+            showImage: true 
         };
     }
 

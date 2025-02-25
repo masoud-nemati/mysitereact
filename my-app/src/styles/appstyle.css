@@ -1,13 +1,6 @@
 
-
-
-
-
 .app-style{
-   
-   
     background-color:#222;
-
     width: 100%;
     border: 2px solid rgba(221, 162, 69, 0.768);
     border-radius: 10px;
@@ -16,15 +9,12 @@
     align-items: center;
     margin: 0 auto;
     gap: 50px;
-
-
 }
-
 
 @media (max-width: 768px) {
     .app-style {
       width: 100%;
-      padding: 15px;  /* کاهش پدینگ در صفحه‌های کوچک */
+      padding: 15px; 
     }
   }
   

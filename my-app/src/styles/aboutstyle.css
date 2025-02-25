@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #333;  /* پس‌زمینه تیره‌تر */
+  background-color: #333;  
   padding: 40px;
   margin-bottom: 20px;
   border-radius: 20px;
@@ -28,7 +28,7 @@
 .div-title:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  background-color: #f9f9f9;  /* تغییر پس‌زمینه در حالت hover */
+  background-color: #f9f9f9;  
 }
 
 .about-us {
@@ -56,8 +56,8 @@
 }
 
 .about-us-image {
-  width: 100%;  /* بزرگتر کردن عرض عکس */
-  max-width: 600px;  /* تنظیم حداکثر عرض برای عکس */
+  width: 100%;  
+  max-width: 600px;  
   height: auto;
   border-radius: 20px;
   margin: 30px 0;
@@ -68,7 +68,7 @@
 
 .about-us-image:hover {
   transform: scale(1.05);
-  filter: brightness(1.1);  /* افزایش روشنایی تصویر */
+  filter: brightness(1.1);  
 }
 
 @media (max-width: 768px) {

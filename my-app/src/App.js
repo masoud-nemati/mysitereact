@@ -9,6 +9,8 @@ import AboutUs from './components/About Us';
 import LoginPage from './components/logincomp';
 import Skills from './components/skillscomp';
 import CommentSection from './components/compsection';
+import ArticlePage from './components/ArticlePage';
+import FullArticle from './components/FullArticle';
 import "./styles/appstyle.css";
 import "./styles/aboutstyle.css";
 
@@ -16,7 +18,6 @@ const LocationBasedLayout = ({ onLogout }) => {
   const location = useLocation();
   const navigate = useNavigate();
   
-  // فقط در صفحه home کامپوننت‌ها را نمایش می‌دهیم
   const showAboutUsAndComments = location.pathname === "/home";
   
   useEffect(() => {
@@ -25,7 +26,7 @@ const LocationBasedLayout = ({ onLogout }) => {
       const documentHeight = document.documentElement.scrollHeight;
 
       if (scrollPosition >= documentHeight) {
-        window.scrollTo(0, documentHeight); // اسکرول را در انتها ثابت می‌کند
+        window.scrollTo(0, documentHeight); 
       }
     };
 
@@ -47,9 +48,9 @@ const LocationBasedLayout = ({ onLogout }) => {
         {/* <Route path="/home" element={<Home />} /> */}
         <Route path="/about" element={<AboutUs />} />
         <Route path='/skills' element={<Skills />} />
+        <Route path='/ArticlePage' element={<ArticlePage />} />
+        <Route path="/ArticlePage/:articleId" element={<FullArticle />} />
       </Routes>
-
-      {/* فقط در صفحه home نمایش داده می‌شود */}
       {showAboutUsAndComments && (
         <>
           <Imagecallery />

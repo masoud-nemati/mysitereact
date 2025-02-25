@@ -14,9 +14,7 @@
     background-color: brown;
     color: aliceblue;
     margin-bottom: 30px;
-    
-    
-    
+  
 }
 .btn-hid{
 
@@ -27,12 +25,9 @@
     background-color: rgb(34, 4, 114);
     color: aliceblue;
     margin-bottom: 30px;
-
 }
 
-
 .btn-img:hover{
-
 background-color: darkmagenta;
 cursor: pointer;
 width: 70%;
@@ -55,10 +50,10 @@ width: 70%;
 }
 
 .img-heder {
-    width: 1300x; /* عرض ثابت */
-    height: 600x; /* ارتفاع ثابت */
-    object-fit: cover; /* برای برش تصویر بدون تغییر نسبت */
-    border-radius: 8px; /* لبه‌های گرد (اختیاری) */
+    width: 1300x; 
+    height: 600x; 
+    object-fit: cover; 
+    border-radius: 8px; 
 }
 
 

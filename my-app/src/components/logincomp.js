@@ -1,10 +1,24 @@
-
 import React, { useState } from "react";
 import "../styles/loginstyle.css";
-import profilePic from "../images/img2.jpg"; // مسیر عکس پروفایل خود را وارد کنید
+import profilePic from "../images/img2.jpg"; 
 
 const LoginPage = ({ onLogin }) => {
   const [email, setEmail] = useState("");
+  const [message, setMessage] = useState(""); 
+
+  const handleSubscribe = () => {
+    if (email) {
+      localStorage.setItem("userEmail", email); 
+      setEmail(""); 
+      setMessage("sent"); 
+
+      setTimeout(() => {
+        setMessage("");
+      }, 3000);
+    } else {
+      alert("please enter your email"); 
+    }
+  };
 
   const handleLogin = () => {
     onLogin();
@@ -23,13 +37,16 @@ const LoginPage = ({ onLogin }) => {
             type="email"
             placeholder="Enter your email"
             value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={(e) => setEmail(e.target.value)} // مقدار ایمیل را ذخیره می‌کند
             className="styled-input"
           />
-          <button className="btn subscribe-btn">Subscribe</button>
+          <button className="btn subscribe-btn" onClick={handleSubscribe}>
+            Subscribe
+          </button>
           <button className="btn visit-btn" onClick={handleLogin}>
             Visit
           </button>
+          {message && <p className="success-message">{message}</p>} {/* نمایش پیام ارسال شد */}
         </div>
       </div>
     </div>
@@ -37,61 +54,3 @@ const LoginPage = ({ onLogin }) => {
 };
 
 export default LoginPage;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import React, { useState } from 'react';
-// import "../styles/loginstyle.css";
-// import profilePic from '../images/img2.jpg'; // مسیر عکس پروفایل خود را وارد کنید
-
-// const LoginPage = ({ onLogin }) => {
-//   const [email, setEmail] = useState('');
-
-//   const handleLogin = () => {
-//     // اعتبارسنجی ایمیل و یا اقدامات دیگر قبل از ورود
-//     onLogin();
-//   };
-
-//   return (
-//     <div className="login-page">
-//     <div className="login-card">
-//       <div className="profile-container">
-//         <div className="profile-info">
-//           <h2>masoud nemati</h2>
-//           <p></p>
-//         </div>
-//         <img className="img-login" src={profilePic} alt="Profile" className="profile-pic" />
-        
-//        </div>
-//       <div className='div-input-login'>
-//         <input
-//         type="email"
-//         placeholder="Enter your email"
-//         value={email}
-//         onChange={(e) => setEmail(e.target.value)}
-//         />
-//         <button >subscribe</button>
-//         <button onClick={handleLogin}>visit</button>
-//       </div>
-//     </div>
-//   </div>
-//   );
-// };
-
-// export default LoginPage;
-
