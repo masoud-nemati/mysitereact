@@ -2,53 +2,48 @@ import React from "react";
 import { Link } from "react-router-dom";
 import ArticleCard from "./Article";
 
-import img1 from "../images/img1.jpg"
-import img2 from "../images/img2.jpg"
-import img3 from "../images/img2.jpg"
-
+import img1 from "../images/imgh.jpg"
+import img2 from "../images/img14.jpg"
+import img3 from "../images/imgaa.jpg"
+import img4 from "../images/img15.jpg"
+import img5 from "../images/imgd.jpg"
 const articles = [
     {
-        title: "مقاله‌ای در مورد رستگاری",
-        date: "24 بهمن 1403",
+        title: "تاثیرات نقاط قوت و ضعف خانواده ها",
+        date: "2023",
         author: "مسعود نعمتی",
         content: "متن مقاله در مورد رستگاری...",
         image: img1
     },
     {
-        title: "مقاله‌ای در مورد نجات",
-        date: "25 بهمن 1403",
+        title: " امید در میان رنج ها و جفاها",
+        date: "2024",
         author: "مسعود نعمتی",
         content: "متن مقاله در مورد نجات...",
         image: img2
     },
     {
-        title: "مقاله‌ای در مورد ایمان",
-        date: "26 بهمن 1403",
+        title: " نقش انبیا در اصلاح پادشاهان و مردم ",
+        date: "2022",
         author: "مسعود نعمتی",
         content: "متن مقاله در مورد ایمان...",
         image: img3
     },
     {
-        title: "مقاله‌ای در مورد ایمان",
-        date: "26 بهمن 1403",
+        title: "آیا آموزه‌های پولس در مورد نجات می‌تواند برای یک مسلمان قانع کننده باشد",
+        date: "2024",
         author: "مسعود نعمتی",
         content: "متن مقاله در مورد ایمان...",
-        image: img3
+        image: img5
     },
     {
-        title: "مقاله‌ای در مورد ایمان",
-        date: "26 بهمن 1403",
+        title: "حریم ها و مرزها",
+        date: "2025",
         author: "مسعود نعمتی",
         content: "متن مقاله در مورد ایمان...",
-        image: img3
+        image: img4
     },
-    {
-        title: "مقاله‌ای در مورد ایمان",
-        date: "26 بهمن 1403",
-        author: "مسعود نعمتی",
-        content: "متن مقاله در مورد ایمان...",
-        image: img3
-    },
+ 
 ];
 
 const ArticlePage = () => {

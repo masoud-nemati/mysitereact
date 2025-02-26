@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation, useNavigate } from 'react-router-dom';
-import Comheder from "./components/comheder";
 import Heder2 from "./components/heder2";
 import Imagecallery from "./components/imagecallery";
 import Footer from './components/compfooter';
-import Home from './components/homecomp';
 import AboutUs from './components/About Us';
 import LoginPage from './components/logincomp';
 import Skills from './components/skillscomp';

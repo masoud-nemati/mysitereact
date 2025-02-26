@@ -125,7 +125,7 @@ h1:hover {
 }
 
 .visit-btn {
-  background-color: #f6c000f5; 
+  background-color: #cfbf83f5; 
   color: white; 
   padding: 12px 20px; 
   border: none; 
@@ -139,6 +139,68 @@ h1:hover {
   background-color: #e2b84d; 
   box-shadow: 0 4px 8px rgba(160, 120, 0, 0.6); 
   transform: translateY(-2px); 
+}
+
+@media (min-width: 1200px) {
+  .login-card {
+    width: 1200px;
+    height: 600px;
+  }
+
+  .styled-input {
+    width: 30%;
+  }
+
+  .btn {
+    width: 30%;
+  }
+}
+
+/* برای صفحه‌نمایش‌های متوسط (تبلت‌ها و لپ‌تاپ‌ها) */
+@media (max-width: 1199px) and (min-width: 768px) {
+  .login-card {
+    width: 90%;
+    height: 500px;
+  }
+
+  .styled-input {
+    width: 40%;
+  }
+
+  .btn {
+    width: 40%;
+  }
+}
+
+/* برای صفحه‌نمایش‌های کوچک (موبایل‌ها) */
+@media (max-width: 767px) {
+  .login-card {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
+
+  .styled-input {
+    width: 80%;
+  }
+
+  .btn {
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+  }
+
+  .username {
+    font-size: 18px;
+    margin-left: 0;
+  }
 }
 
 

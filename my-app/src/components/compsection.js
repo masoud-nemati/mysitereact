@@ -36,7 +36,7 @@ export default function CommentSection() {
 
   return (
     <div className="comment-section">
-      <h2>نظرات و پیشنهادات</h2>
+      <h2>Comments and Suggestions Section</h2>
 
       {isLoggedIn ? (
         <div>
@@ -48,7 +48,7 @@ export default function CommentSection() {
             className="input-field"
           />
           <textarea
-            placeholder="نظر خود را بنویسید..."
+            placeholder="Write your comment..."
             value={text}
             onChange={(e) => setText(e.target.value)}
             className="textarea-field"
@@ -58,8 +58,11 @@ export default function CommentSection() {
           </button>
         </div>
       ) : (
-        <p>برای ارسال نظر باید وارد شوید.</p>
-      )}
+<p>You must be logged in to submit a comment.</p>
+
+
+
+)}
 
       {/* بخش نمایش نظرات حذف شده است */}
     </div>

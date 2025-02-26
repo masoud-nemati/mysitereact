@@ -1,10 +1,11 @@
 
 .article-page {
+    width: 1200px;
 
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* فاصله بین مقالات */
-    justify-content: space-around; /* تنظیم برای نمایش در وسط صفحه */
+    gap: 40px; 
+    justify-content: space-around; 
 }
 
 .article-container {
@@ -13,17 +14,24 @@
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 500px;
-    height: auto; /* عرض هر مقاله */
+    height: 400px; 
     cursor: pointer;
     transition: transform 0.2s;
-    margin-bottom: 20px; /* فاصله از پایین */
+    margin-bottom: 20px; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+
+
 }
 
 .article-image {
     width: 100%;
-    height: 200px; /* اندازه دلخواه برای ارتفاع */
-    object-fit: cover; /* تصویر پر می‌کند بدون تغییر نسبت ابعاد */
-    border-radius: 8px; /* گرد کردن گوشه‌ها */
+    height: 250px; 
+    object-fit: cover; 
+    border-radius: 8px; 
   }
 
 .article-container:hover {
@@ -51,10 +59,6 @@
     line-height: 1.6;
     color: #555;
 }
-
-
-
-
 
 
 .full-article {
@@ -99,3 +103,31 @@
     color: white;
   }
   
+  @media screen and (max-width: 768px) {
+    .article-container {
+        width: 80%; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .article-page {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .article-container {
+        width: 100%; 
+        padding: 10px;
+    }
+
+    .article-title {
+        font-size: 1.3rem;
+    }
+
+    .article-content {
+        font-size: 0.9rem;
+    }
+}
+h2{
+    text-align: center;
+}

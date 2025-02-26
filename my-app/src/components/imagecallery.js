@@ -4,6 +4,8 @@ import React, { Component } from 'react';
 import img1 from "../images/slaidimg.jpg";
 import img2 from "../images/bodyimg.jpg";
 import img3 from "../images/davood.3.jpg";
+import img5 from "../images/Picsart.jpg";
+import img6 from "../images/Picsart1.jpg";
 import img4 from "../images/image.jpg"
 import "../styles/imagesstyle.css";
 
@@ -12,7 +14,7 @@ class Image extends Component {
         super();
         this.state = {
             currentIndex: 0, 
-            images: [ img2, img3,img4,img1], 
+            images: [ img2, img3,img4,img1,img5,img6], 
             showImage: true 
         };
     }

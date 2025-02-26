@@ -1,12 +1,12 @@
 .comment-section {
-    width: 1300px;/* عرض 1100 پیکسل */
-    margin: 30px auto;  /* مرکز چین کردن کامپوننت */
-    padding: 25px;
-    background-color: #f9fafb;
-    border-radius: 15px;
-    box-shadow: 0px 4px 8px #fffefcff;
-
-  }
+  max-width: 1300px;  /* حداکثر عرض 1300px */
+  width: 90%;         /* عرض ۹۰٪ برای نمایش بهتر در نمایشگرهای کوچکتر */
+  margin: 30px auto;  
+  padding: 25px;
+  background-color: #f9fafb;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px #fffefc;
+}
   
   .comment-section h2 {
     font-size: 24px;
@@ -21,7 +21,7 @@
     width: 100%;
     padding: 12px;
     margin-bottom: 15px;
-    border: 1px solid #ddd;
+    border: 1px solid #6a6666;
     border-radius: 8px;
     font-size: 16px;
     transition: all 0.3s ease-in-out;
@@ -93,3 +93,18 @@
     color: #c53030;
   }
   
+
+  @media (max-width: 1024px) {
+    .comment-section {
+        width: 95%; /* کاهش عرض در تبلت */
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .comment-section {
+        width: 100%;  /* پر کردن کل صفحه در موبایل */
+        padding: 15px;
+        border-radius: 10px;
+    }
+}

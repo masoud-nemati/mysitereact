@@ -14,16 +14,29 @@ const Footer = () => {
 
     const handleFormSubmit = (event) => {
         event.preventDefault();
-        console.log(" :", email)
-        setemail('');
-        alert('Your email has been sent');
-    }
+
+        if (!email.trim()) {
+            alert('The field is empty. Please enter your email.');
+            return;
+        }
+
+        localStorage.setItem('userEmail', email);
+        console.log("Email sent:", email);
+
+        setemail('');  // پاک کردن فیلد ورودی
+        setmessage('Email sent successfully!'); // تنظیم پیام موفقیت
+
+        setTimeout(() => {
+            setmessage(''); // حذف پیام بعد از چند ثانیه
+        }, 3000);
+    };
+
 
     useEffect(() => {
         const handleScroll = () => {
             const scrollPosition = window.scrollY + window.innerHeight; // موقعیت اسکرول + ارتفاع پنجره
             const documentHeight = document.documentElement.scrollHeight; // ارتفاع کامل صفحه
-    
+
             // نمایش فوتر زمانی که کاربر 90% از صفحه را اسکرول کرده باشد
             if (scrollPosition >= documentHeight * 0.9) {
                 setIsVisible(true);
@@ -31,9 +44,9 @@ const Footer = () => {
                 setIsVisible(false);
             }
         };
-    
+
         window.addEventListener('scroll', handleScroll);
-    
+
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
@@ -69,7 +82,7 @@ const Footer = () => {
                     </li>
                     <li>
                         <a href="https://twitter.com/masoud_nemati" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-twitter"></i>
+                            <i className="fab fa-x-twitter"></i>
                         </a>
                     </li>
                     <li>

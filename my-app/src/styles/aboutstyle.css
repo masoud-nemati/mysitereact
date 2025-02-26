@@ -14,16 +14,17 @@
   display: flex;
   justify-content: center;
   width: 80%;
-  max-width: 500px;
-  height: auto;
+  max-width: 700px;
+  height: 300px; /* یا مقدار دلخواه */
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
   padding: 20px;
   margin: 20px auto;
-  overflow: hidden;
+  overflow: auto; /* اسکرول برای محتوا */
   transition: all 0.3s ease;
 }
+
 
 .div-title:hover {
   transform: translateY(-5px);
