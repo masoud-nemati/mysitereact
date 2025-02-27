@@ -6,7 +6,7 @@ import logo2 from '../logos/java-script.png';
 import logohtml from '../logos/html-5.png';
 import logokotlin from '../logos/kotlin-logo.png';
 import logoedit from '../logos/editingword.jpeg';
-import logogit from '../logos/gitimage1.jpeg';
+import logogit from '../logos/github2.png';
 import logwe from '../../src/logos/welder.png';
 import ligwork from '../../src/logos/work.png';
 

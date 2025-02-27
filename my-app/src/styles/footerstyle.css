@@ -1,30 +1,30 @@
+
 .footer-container {
     width: 100%;
-    height: 250px;
-    margin: 0 auto; /* وسط‌چین کردن فوتر */
+    height: auto;
+    margin: 0 auto;
     background: #222;
     color: #fff;
     padding: 30px 20px;
     display: flex;
-    flex-wrap: wrap; /* در صورت کمبود فضا، به خط بعدی بره */
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    box-shadow: 0 4px 2px rgba(216, 149, 15, 0.979);
     border-top: 1px solid whitesmoke;
     gap: 25px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     box-sizing: border-box;
     text-align: left;
-    position: relative; 
+    position: relative;
 }
 
 .footer-copyright {
-    text-align: center; 
-    position: relative; 
-    bottom: 30px; 
-    left: 0; 
-    width: 100%; 
+    text-align: center;
+    position: relative;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
     font-size: 0.9rem;
     color: #bbb;
     padding-top: 20px;
@@ -40,10 +40,9 @@
     margin-right: 10px;
 }
 
-/* تنظیم تمام ستون‌ها برای نمایش مناسب */
 .footer-nav, .footer-contact, .footer-social, .footer-subscribe {
-    width: calc(25% - 20px); /* چهار ستون در دسکتاپ */
-    min-width: 200px; /* حداقل عرض */
+    width: calc(25% - 20px); 
+    min-width: 200px; 
     flex-grow: 1;
 }
 
@@ -51,6 +50,11 @@
     list-style: none;
     padding: 0;
 }
+.a-whatsup i {
+    color: #25D366; 
+    font-size: 24px; 
+}
+
 
 .footer-nav a, .footer-contact a, .footer-social a {
     text-decoration: none;
@@ -59,14 +63,14 @@
 }
 
 .footer-nav a:hover, .footer-contact a:hover, .footer-social a:hover {
-    color: #00b894;
+    color: #ce1515;
     font-size: 1.1rem;
 }
 
-/* فرم عضویت */
 .footer-subscribe input[type="email"] {
     padding: 8px 12px;
-    width: 100%; 
+    width: 100%;
+    max-width: 60%; 
     margin: 10px 0;
     border-radius: 5px;
     border: 1px solid #777;
@@ -84,6 +88,7 @@
     cursor: pointer;
     transition: background 0.3s ease;
     width: 100%; 
+    max-width: 60%;
     box-sizing: border-box; 
 }
 
@@ -91,7 +96,6 @@
     background: #b98c1b;
 }
 
-/* آیکون‌های شبکه‌های اجتماعی */
 .footer-social ul {
     list-style: none;
     padding: 0;
@@ -106,6 +110,7 @@
 }
 
 .footer-social a {
+    font-size: 2rem;
     text-decoration: none;
     color: #ccc;
     display: flex;
@@ -117,14 +122,18 @@
     font-size: 18px;
     margin-right: 8px;
     color: red;
+    font-size: 2rem; 
+}
+
+
+.footer-social i:hover{
+    font-size: larger;
 }
 
 .footer-social a:hover {
-    color: #00b894;
+    color: #f76c0a; 
     transform: scale(1.1);
 }
-
-/* تیترها */
 h4 {
     font-size: 1.2rem;
     margin-bottom: 10px;
@@ -132,29 +141,84 @@ h4 {
 }
 
 h4:hover {
-    color: #00b894;
+    color: #b80003;
 }
 
-/* نسخه موبایل */
-@media (max-width: 480px) {
+.footer-container.visible {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+
+.footer-container {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+
+
+@media (max-width: 800px) {
     .footer-container {
-        flex-direction: column;
+        border-top-left-radius: 0% ;
+        border-top-right-radius: 0%;
+        width: 90%;
+        flex-direction: column; 
         align-items: center;
         text-align: center;
+        padding: 20px;
     }
 
     .footer-nav, .footer-contact, .footer-social, .footer-subscribe {
-        width: 100%;
+        width: 100%; 
+        margin-bottom: 20px;
+        flex: 1 1 100%; 
     }
 
     .footer-social ul {
         flex-direction: column;
         align-items: center;
+        gap: 10px; 
+    }  
+
+
+    
+
+    .footer-logo img {
+        height: 50px;
+    }
+
+    h4 {
+        font-size: 1.2rem; 
+    }
+
+    .footer-subscribe input[type="email"], .footer-subscribe button {
+        width: 100%; 
     }
 
     .footer-copyright {
-        position: relative;
-        bottom: 0;
-        padding-top: 20px;
+        padding-top: 10px;
+        font-size: 0.8rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container {
+        padding: 15px 10px;
+        width: 80%;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    .footer-subscribe input[type="email"], .footer-subscribe button {
+        width: 100%;
+    }
+
+    .footer-social i {
+        font-size: 16px; 
+    }
+
+    .footer-social ul {
+        gap: 8px; 
     }
 }

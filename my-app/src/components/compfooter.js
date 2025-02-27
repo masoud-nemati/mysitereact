@@ -62,10 +62,15 @@ const Footer = () => {
                 <h4>Contact Us</h4>
                 <ul>
                     <li><a href="mailto:info@example.com">masuodn8@gmail.com</a></li>
+                    <li>
+                        <a className='a-whatsup' href="https://wa.me/+905313845662" target="_blank" rel="noopener noreferrer">
+                            <i className="fab fa-whatsapp"></i> WhatsApp :
+                        </a>
+                    </li>
                     <li><a href="tel:+1234567890">+90 531 384 5662</a></li>
-                    <li><address>Address:</address></li>
                 </ul>
             </div>
+
 
             <div className="footer-social">
                 <h4>Follow Us</h4>

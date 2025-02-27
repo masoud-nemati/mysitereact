@@ -13,9 +13,9 @@ class Image extends Component {
     constructor() {
         super();
         this.state = {
-            currentIndex: 0, 
-            images: [ img2, img3,img4,img1,img5,img6], 
-            showImage: true 
+            currentIndex: 0,
+            images: [img2, img3, img4, img1, img5, img6],
+            showImage: true
         };
     }
 
@@ -37,7 +37,7 @@ class Image extends Component {
                     <>
                         <div className="image-container" onClick={this.changeImage}>
                             <img className="img-heder" src={this.state.images[this.state.currentIndex]} alt="slideshow" />
-                            <div className="overlay">🔄 Click to Change</div> 
+                            <div className="overlay">🔄 Click to Change</div>
                         </div>
                         {/* <button className="btn-hid" onClick={this.toggleImage}>Hide</button> */}
                     </>

@@ -15,16 +15,16 @@ import "./styles/aboutstyle.css";
 const LocationBasedLayout = ({ onLogout }) => {
   const location = useLocation();
   const navigate = useNavigate();
-  
+
   const showAboutUsAndComments = location.pathname === "/home";
-  
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY + window.innerHeight;
       const documentHeight = document.documentElement.scrollHeight;
 
       if (scrollPosition >= documentHeight) {
-        window.scrollTo(0, documentHeight); 
+        window.scrollTo(0, documentHeight);
       }
     };
 
@@ -38,9 +38,9 @@ const LocationBasedLayout = ({ onLogout }) => {
   return (
     <div className='app-style'>
       {/* <Comheder /> */}
-      <Heder2 onLogout={() => { 
-        onLogout(); 
-        navigate('/home'); 
+      <Heder2 onLogout={() => {
+        onLogout();
+        navigate('/home');
       }} />
       <Routes>
         {/* <Route path="/home" element={<Home />} /> */}

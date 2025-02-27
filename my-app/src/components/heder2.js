@@ -5,22 +5,14 @@ import "../styles/main.scss";
 
 const Header2 = ({ onLogout }) => {
     const handleLogout = (e) => {
-        e.preventDefault(); // جلوگیری از رفتار پیش‌فرض لینک
-        onLogout(); // فراخوانی تابع خروج
+        e.preventDefault(); 
+        onLogout(); 
     };
 
     return (
         <div className="header-container">
             <nav>
                 <ul>
-                    {/* <li className="border-li">
-                        <Link to="/home" aria-label="Home">
-                            <i className="fas fa-home"></i>
-                        </Link>
-                    </li> */}
-                    {/* <li className="border-li">
-                        <Link to="/about">About Us</Link>
-                    </li> */}
                     <li className="border-li">
                         <Link to="/ArticlePage">ArticlePage</Link>
                     </li>
@@ -40,7 +32,6 @@ const Header2 = ({ onLogout }) => {
                     <h1 className="logo-text">MySite</h1>
                 </Link>
             </div>
-
         </div>
     );
 };

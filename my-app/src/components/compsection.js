@@ -1,13 +1,12 @@
 import { useState, useEffect } from "react";
-import "../styles/CommentSection.css"; // ایمپورت استایل‌ها
+import "../styles/CommentSection.css";
 
 export default function CommentSection() {
   const [comments, setComments] = useState([]);
   const [name, setName] = useState("");
   const [text, setText] = useState("");
-  const [isLoggedIn, setIsLoggedIn] = useState(true);  // وضعیت ورود (برای ارسال نظرات)
+  const [isLoggedIn] = useState(true);
 
-  // بارگذاری نظرات از localStorage
   useEffect(() => {
     if (isLoggedIn) {
       const savedComments = localStorage.getItem('comments');
@@ -17,14 +16,12 @@ export default function CommentSection() {
     }
   }, [isLoggedIn]);
 
-  // ذخیره نظرات در localStorage هر بار که نظرات تغییر می‌کنند
   useEffect(() => {
     if (comments.length > 0 && isLoggedIn) {
       localStorage.setItem('comments', JSON.stringify(comments));
     }
   }, [comments, isLoggedIn]);
 
-  // اضافه کردن نظر
   const addComment = () => {
     if (name.trim() && text.trim()) {
       const newComment = { id: Date.now(), name, text };
@@ -58,11 +55,11 @@ export default function CommentSection() {
           </button>
         </div>
       ) : (
-<p>You must be logged in to submit a comment.</p>
+        <p>You must be logged in to submit a comment.</p>
 
 
 
-)}
+      )}
 
       {/* بخش نمایش نظرات حذف شده است */}
     </div>

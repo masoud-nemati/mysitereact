@@ -1,22 +1,22 @@
 import React, { useState } from "react";
 import "../styles/loginstyle.css";
-import profilePic from "../images/img2.jpg"; 
+import profilePic from "../images/img2.jpg";
 
 const LoginPage = ({ onLogin }) => {
   const [email, setEmail] = useState("");
-  const [message, setMessage] = useState(""); 
+  const [message, setMessage] = useState("");
 
   const handleSubscribe = () => {
     if (email) {
-      localStorage.setItem("userEmail", email); 
-      setEmail(""); 
-      setMessage("sent"); 
+      localStorage.setItem("userEmail", email);
+      setEmail("");
+      setMessage("sent");
 
       setTimeout(() => {
         setMessage("");
       }, 3000);
     } else {
-      alert("please enter your email"); 
+      alert("please enter your email");
     }
   };
 

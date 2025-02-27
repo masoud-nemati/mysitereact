@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/articleStyle.css"; // برای استایل‌ها
+import "../styles/articleStyle.css"; 
 
 const Article = ({ title, date, author,image, onClick }) => {
     return (
