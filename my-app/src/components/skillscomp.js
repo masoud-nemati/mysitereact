@@ -13,10 +13,10 @@ import ligwork from '../../src/logos/work.png';
 
 const programmingSkills = [
   { name: 'JavaScript', level: 40, logo: logo2 },
-  { name: 'React', level: 50, logo: logo1 },
+  { name: 'React', level: 40, logo: logo1 },
   { name: 'HTML & CSS', level: 70, logo: logohtml },
-  { name: 'Kotlin', level: 50, logo: logokotlin },
-  { name: 'Github', level: 60, logo: logogit },
+  { name: 'Kotlin', level: 30, logo: logokotlin },
+  { name: 'Github', level: 50, logo: logogit },
   { name: 'Editing', level: 70, logo: logoedit },
 ];
 

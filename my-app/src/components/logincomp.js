@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom'; // افزودن useNavigate
 import "../styles/loginstyle.css";
 import profilePic from "../images/img2.jpg";
 
 const LoginPage = ({ onLogin }) => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const navigate = useNavigate(); // استفاده از useNavigate
 
   const handleSubscribe = () => {
     if (email) {
@@ -22,6 +24,7 @@ const LoginPage = ({ onLogin }) => {
 
   const handleLogin = () => {
     onLogin();
+    navigate("/home"); // هدایت به صفحه /home پس از ورود
   };
 
   return (

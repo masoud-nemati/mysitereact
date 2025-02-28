@@ -1,3 +1,10 @@
+/* تنظیمات کلی */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .comment-section {
   max-width: 100%;
   width: 76%;
@@ -53,7 +60,7 @@
 }
 
 .submit-button:hover {
-  background-color: #b98c1b;
+  background-color: #d65a08; /* تناسب بهتر رنگ */
   transform: scale(1.05);
 }
 
@@ -93,89 +100,93 @@
   color: #c53030;
 }
 
+/* تنظیمات واکنش‌گرا */
+
+/* تبلت و دستگاه‌های متوسط */
 @media (max-width: 1024px) {
   .comment-section {
-      width: 95%; 
-      padding: 20px;
+    width: 90%; 
+    padding: 20px;
   }
 
   .input-field,
   .textarea-field {
-      padding: 10px; 
-      font-size: 14px; 
+    padding: 10px; 
+    font-size: 14px; 
   }
 
   .submit-button {
-      font-size: 14px; 
-      padding: 10px; 
+    font-size: 14px; 
+    padding: 10px; 
   }
 
   .comment-box p {
-      font-size: 14px; 
+    font-size: 14px; 
   }
 
   .delete-button {
-      font-size: 12px; 
+    font-size: 12px; 
   }
 }
 
-/* تنظیمات برای موبایل */
+/* موبایل */
 @media (max-width: 768px) {
   .comment-section {
-      width: 100% !important;  
-      padding: 15px !important;
-      border-radius: 10px !important;
+    width: 95%;
+    padding: 15px;
+    border-radius: 10px;
   }
 
   .comment-section h2 {
-      font-size: 20px !important; 
+    font-size: 20px;
   }
 
   .input-field,
   .textarea-field {
-      padding: 8px !important; 
-      font-size: 14px !important; 
+    padding: 8px; 
+    font-size: 14px; 
   }
 
   .submit-button {
-      font-size: 14px !important; 
-      padding: 10px !important; 
+    font-size: 14px; 
+    padding: 10px; 
   }
 
   .comment-box p {
-      font-size: 14px !important; 
+    font-size: 14px; 
   }
 
   .delete-button {
-      font-size: 12px !important; 
+    font-size: 12px; 
   }
 }
 
-/* تنظیمات برای موبایل کوچکتر از 480px */
+/* موبایل کوچک‌تر از 480px */
 @media (max-width: 480px) {
   .comment-section {
     width: 100%;
-      padding: 10px !important; 
+    padding: 10px;
+    min-height: 200px; /* به جای height ثابت */
   }
 
   .comment-section h2 {
-      font-size: 18px !important; 
+    font-size: 18px;
   }
 
   .input-field,
   .textarea-field {
-      font-size: 13px !important; 
+    font-size: 13px;
   }
 
   .submit-button {
-      font-size: 13px !important; 
+    font-size: 13px;
   }
 
   .comment-box p {
-      font-size: 13px !important; 
+    font-size: 13px;
   }
 
   .delete-button {
-      font-size: 11px !important; 
+    font-size: 11px;
   }
 }

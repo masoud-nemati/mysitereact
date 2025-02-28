@@ -19,9 +19,9 @@ const Header2 = ({ onLogout }) => {
                     <li className="border-li">
                         <Link to="/skills">Skills</Link>
                     </li>
-                    <li className="border-li">
+                    {/* <li className="border-li">
                         <Link to="/contact">Contact Us</Link>
-                    </li>
+                    </li> */}
                     <li className="border-li">
                         <a href="/" onClick={handleLogout}>Logout</a>
                     </li>
