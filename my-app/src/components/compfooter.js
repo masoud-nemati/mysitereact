@@ -23,21 +23,20 @@ const Footer = () => {
         localStorage.setItem('userEmail', email);
         console.log("Email sent:", email);
 
-        setemail('');  // پاک کردن فیلد ورودی
-        setmessage('Email sent successfully!'); // تنظیم پیام موفقیت
+        setemail('');  
+        setmessage('Email sent successfully!'); 
 
         setTimeout(() => {
-            setmessage(''); // حذف پیام بعد از چند ثانیه
+            setmessage(''); 
         }, 3000);
     };
 
 
     useEffect(() => {
         const handleScroll = () => {
-            const scrollPosition = window.scrollY + window.innerHeight; // موقعیت اسکرول + ارتفاع پنجره
-            const documentHeight = document.documentElement.scrollHeight; // ارتفاع کامل صفحه
+            const scrollPosition = window.scrollY + window.innerHeight; 
+            const documentHeight = document.documentElement.scrollHeight; 
 
-            // نمایش فوتر زمانی که کاربر 90% از صفحه را اسکرول کرده باشد
             if (scrollPosition >= documentHeight * 0.9) {
                 setIsVisible(true);
             } else {

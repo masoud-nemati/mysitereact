@@ -5,6 +5,7 @@ import img1 from "../images/slaidimg.jpg";
 import img2 from "../images/bodyimg.jpg";
 import img4 from "../images/image.jpg";
 import img10 from "../images/Picsart10.jpg";
+import img5 from "../images/PICNEW.png";
 import "../styles/imagesstyle.css";
 
 class Image extends Component {
@@ -12,7 +13,7 @@ class Image extends Component {
         super();
         this.state = {
             currentIndex: 0,
-            images: [img10 ,img2, img4, img1],
+            images: [img10 ,img2,img5, img4, img1],
             showImage: true
         };
     }
