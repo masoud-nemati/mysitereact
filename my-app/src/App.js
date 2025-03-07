@@ -9,6 +9,7 @@ import Skills from './components/skillscomp';
 import CommentSection from './components/compsection';
 import ArticlePage from './components/ArticlePage';
 import FullArticle from './components/FullArticle';
+import ScrollToTop from './components/ScrollToTop';
 import "./styles/appstyle.css";
 import "./styles/aboutstyle.css";
 
@@ -33,6 +34,7 @@ const LocationBasedLayout = ({ onLogout }) => {
         <Route path='/ArticlePage' element={<ArticlePage />} />
         <Route path="/ArticlePage/:articleId" element={<FullArticle />} />
       </Routes>
+      <ScrollToTop />
       <Footer />
     </div>
   );

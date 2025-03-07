@@ -16,7 +16,7 @@
     object-fit: cover;
     object-position: center center; 
     transition: transform 0.3s ease-in-out;
-    min-width: 300px; /* جلوگیری از ناپدید شدن تصویر در صفحات خیلی کوچک */
+    min-width: 300px; 
 }
 
 .overlay {

@@ -1,6 +1,11 @@
 import React from "react";
 import "../styles/articleStyle.css";
 import { useParams, Link } from "react-router-dom";
+import img1 from "../images/imgh.jpg";
+import img2 from "../images/img14.jpg"
+import img3 from "../images/imgaa.jpg"
+import img4 from "../images/img15.jpg"
+import img5 from "../images/imgd.jpg"
 
 const articles = [
   {
@@ -66,7 +71,8 @@ const articles = [
     
     
     
-    `
+    `,
+    image: img1
   },
   {
     title: " امید در میان رنج ها و جفاها",
@@ -107,7 +113,9 @@ const articles = [
       </ul>
       <p>خداوندا، تو پناهگاه و قوت ما هستی. در میان آزمایش‌ها و سختی‌ها، امید زنده‌ای که در مسیح داریم را به یادمان بیاور. به ما حکمت و فروتنی عطا کن تا نور تو را به این دنیا بتابانیم و دل‌های شکسته را به سوی تو هدایت کنیم. در نام عیسی مسیح، آمین.</p>
       <p>خداوند با شما باشد و شما را در ایمان استوار سازد.</p>
-    `
+
+    `,
+    image: img2
   },
 
   {
@@ -188,7 +196,8 @@ const articles = [
     <p>این نماد نشانگر رابطه خدا با ماست و اینکه خدا به فکر ماست و می‌خواهد با او وارد رابطه شویم. چون خداوند قدوس است، به خاطر ما تنها فرزندش، عیسی مسیح، را به روی زمین فرستاد تا برای گناهان ما بر صلیب شود و خونش ریخته شود تا ما با ایمان به مسیح، توبه و بازگشت کنیم و بتوانیم با خدا وارد رابطه شوی
     </section>
     
-    `
+    `,
+    image: img3
   },
   {
     title: "آموزه‌های پولس در مورد نجات",
@@ -274,7 +283,8 @@ const articles = [
     </article>
 
     
-    `
+    `,
+    image: img5
   },
   {
     title: "حریم‌ها، حیطه‌ها و مرزها: تعریف و تفاوت‌ها",
@@ -337,7 +347,8 @@ const articles = [
     <p>حریم‌ها، حیطه‌ها و مرزها مفاهیم کلیدی در روان‌شناسی و روابط انسانی هستند که تأثیرات عمیقی بر سلامت روانی افراد دارند. هر فرد باید توانایی شناخت و حفظ مرزهای شخصی خود را داشته باشد تا از آسیب‌های روانی و اجتماعی جلوگیری کند. در کنار آن، احترام به مرزهای دیگران نیز ضروری است تا روابط انسانی سالم و مستدام باقی بماند. به همین دلیل، باید تلاش کنیم تا در روابط خانوادگی، اجتماعی و حرفه‌ای مرزهای سالمی ایجاد کنیم و از تأثیرات منفی آن بر روابط خود جلوگیری کنیم.</p>
 
     
-    `
+    `,
+     image: img4
   },
 ];
 
@@ -351,19 +362,26 @@ const FullArticle = () => {
 
   return (
     <div className="full-article" dir="rtl">
-      <h2>{article.title}</h2>
-      <p className="author-date">
-        <strong>نویسنده:</strong> {article.author} | <strong>تاریخ:</strong> {article.date}
-      </p>
-      <div className="article-content">
-        {/* استفاده از dangerouslySetInnerHTML برای پردازش HTML در متن */}
-        <p dangerouslySetInnerHTML={{ __html: article.content }} />
+    <h2>{article.title}</h2>
+    <p className="author-date">
+      <strong>نویسنده:</strong> {article.author} | <strong>تاریخ:</strong> {article.date}
+    </p>
+    {article.image && (
+      <div className="article-image2">
+        <img src={article.image} alt={article.title} />
       </div>
-      <Link to="/ArticlePage" className="back-link">
-        <i className="fas fa-arrow-left"></i>
-      </Link>
+    )}
+    <div className="article-content">
+      <p dangerouslySetInnerHTML={{ __html: article.content }} />
     </div>
+    <Link to="/ArticlePage" className="back-link">
+      <i className="fas fa-arrow-left"></i>
+    </Link>
+  </div>
+  
+  
   );
 };
+
 
 export default FullArticle;

@@ -13,12 +13,13 @@ const Header2 = ({ onLogout }) => {
         <div className="header-container">
             <nav>
                 <ul>
-                    <li className="border-li">
-                        <Link to="/ArticlePage">ArticlePage</Link>
-                    </li>
-                    <li className="border-li">
+                <li className="border-li">
                         <Link to="/skills">Skills</Link>
                     </li>
+                    <li className="border-li">
+                        <Link to="/ArticlePage">Blog</Link>
+                    </li>
+                  
                     {/* <li className="border-li">
                         <Link to="/contact">Contact Us</Link>
                     </li> */}
