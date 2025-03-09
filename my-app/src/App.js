@@ -10,6 +10,7 @@ import CommentSection from './components/compsection';
 import ArticlePage from './components/ArticlePage';
 import FullArticle from './components/FullArticle';
 import ScrollToTop from './components/ScrollToTop';
+import  Breadcrumbs from './components/beradcrumbs';
 import "./styles/appstyle.css";
 import "./styles/aboutstyle.css";
 
@@ -17,6 +18,7 @@ const LocationBasedLayout = ({ onLogout }) => {
   return (
     <div className='app-style'>
       <Heder2 onLogout={onLogout} />
+      < Breadcrumbs/>
       <Routes>
         <Route path="/" element={<Navigate to="/home" />} /> {/* تغییر مسیر به /home */}
         <Route

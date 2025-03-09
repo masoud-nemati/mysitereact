@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { useNavigate } from 'react-router-dom'; // افزودن useNavigate
+import { useNavigate } from 'react-router-dom'; 
 import "../styles/loginstyle.css";
 import profilePic from "../images/img2.jpg";
 
 const LoginPage = ({ onLogin }) => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const navigate = useNavigate(); // استفاده از useNavigate
+  const navigate = useNavigate(); 
 
   const handleSubscribe = () => {
     if (email) {
@@ -40,7 +40,7 @@ const LoginPage = ({ onLogin }) => {
             type="email"
             placeholder="Enter your email"
             value={email}
-            onChange={(e) => setEmail(e.target.value)} // مقدار ایمیل را ذخیره می‌کند
+            onChange={(e) => setEmail(e.target.value)} 
             className="styled-input"
           />
           <button className="btn subscribe-btn" onClick={handleSubscribe}>
@@ -49,7 +49,7 @@ const LoginPage = ({ onLogin }) => {
           <button className="btn visit-btn" onClick={handleLogin}>
             Visit
           </button>
-          {message && <p className="success-message">{message}</p>} {/* نمایش پیام ارسال شد */}
+          {message && <p className="success-message">{message}</p>} 
         </div>
       </div>
     </div>

@@ -4,7 +4,7 @@ import { useParams, Link } from "react-router-dom";
 import img1 from "../images/imgh.jpg";
 import img2 from "../images/img14.jpg"
 import img3 from "../images/imgaa.jpg"
-import img4 from "../images/img15.jpg"
+import img4 from "../images/images55.webp"
 import img5 from "../images/imgd.jpg"
 
 const articles = [
@@ -36,7 +36,7 @@ const articles = [
 
   <h3>نقاط قوت خانواده</h3>
   <p>
-    مطمئناً در همه خانواده‌ها نقاط قوت و ضعف وجود دارد. من در اینجا اشاره می‌کنم به نکات قوتی که در خانواده من بود:
+    مطمئناً در همه خانواده‌ها نقاط قوت و ضعف وجود دارد. مانند:
   </p>
   <ul>
     <li>مسئولیت‌پذیری</li>
@@ -66,11 +66,6 @@ const articles = [
   </p>
 </div>
 
-    
-    
-    
-    
-    
     `,
     image: img1
   },

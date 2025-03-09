@@ -135,6 +135,10 @@
   color: #007bff;
 }
 
+.highlight{
+  color: #007bff;
+}
+
 @media (max-width: 768px) {
 
   .about-main {

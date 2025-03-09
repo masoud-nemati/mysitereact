@@ -92,11 +92,11 @@
   
   .full-article h2 {
     font-size: 24px;
-    color:rgb(224, 17, 17);
+    color:rgb(37, 31, 31);
     margin-bottom: 10px;
   }
   .full-article h3{
-    color: blue;
+    color: rgb(14, 14, 16);
   }
   
   .author-date {
@@ -136,7 +136,7 @@
   .article-image2 img {
     width: 100%; 
     height: auto; 
-    max-height: 500px; 
+    max-height: 600px; 
     display: block;
     margin: 0 auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);

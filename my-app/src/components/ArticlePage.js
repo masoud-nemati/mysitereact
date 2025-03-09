@@ -5,7 +5,7 @@ import ArticleCard from "./Article";
 import img1 from "../images/imgh.jpg"
 import img2 from "../images/img14.jpg"
 import img3 from "../images/imgaa.jpg"
-import img4 from "../images/img15.jpg"
+import img4 from "../images/images55.webp"
 import img5 from "../images/imgd.jpg"
 const articles = [
     {
@@ -30,7 +30,7 @@ const articles = [
         image: img3
     },
     {
-        title: "آیا آموزه‌های پولس در مورد نجات می‌تواند برای یک مسلمان قانع کننده باشد",
+        title: "آموزهای پولس در مورد نجات",
         date: "2024",
         author: "مسعود نعمتی",
         content: "متن مقاله در مورد ایمان...",
