@@ -75,6 +75,7 @@ nav li {
         padding: 10px;
         margin: 0 auto;
         height: auto;
+        min-height: 130px;
     }
 
     nav ul {
@@ -85,7 +86,7 @@ nav li {
     }
 
     nav a {
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .header-logo {
@@ -96,10 +97,11 @@ nav li {
 @media (max-width: 480px) {
     .header-container {
         padding: 10px 5px;
-        width: 50%;  
+        width: 50%;
+        min-height: 100px;
     }
 
     nav a {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
