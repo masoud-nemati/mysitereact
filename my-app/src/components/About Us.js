@@ -10,10 +10,15 @@ const AboutUs = () => {
 
         <div className='about-div'>
           <h2 className='about-h2'>My Journey</h2>
-          <p className='p-1'>
+          <p className="p-1">
             Programming is my passion, and <span className="highlight">I love it and am constantly striving to grow in coding</span>.
             Right now, I'm diving into JavaScript, TypeScript, React, and Kotlin.
+            <br />
+            <span className="highlight">
+              God has helped me a lot and has changed my life.
+            </span>
           </p>
+
 
 
           <p className='p-1'>
