@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7ee4e5d6.css",
+    "main.js": "/static/js/main.c8084ca5.js",
+    "static/media/images55.webp": "/static/media/images55.3a8521fa17dc8138e5a2.webp",
+    "static/media/Picsart.jpg": "/static/media/Picsart.79281ae2ce559e4a0685.jpg",
+    "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
+    "static/media/bodyimg.jpg": "/static/media/bodyimg.90d7751e3afeeed9aa58.jpg",
+    "static/media/kotlin-logo.png": "/static/media/kotlin-logo.31de0750f80405230a5f.png",
+    "static/media/img2.jpg": "/static/media/img2.374f529f0757a762162b.jpg",
+    "static/media/PICNEW.png": "/static/media/PICNEW.724d6c5fa3e4b18ea978.png",
+    "static/media/image.jpg": "/static/media/image.d8560e50849c8eb2ab19.jpg",
+    "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.1815e00441357e01619e.ttf",
+    "static/media/baner.webp": "/static/media/baner.23251895f1c680b70db6.webp",
+    "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.2463b90d9a316e4e5294.woff2",
+    "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.c210719e60948b211a12.woff2",
+    "static/media/imgd.jpg": "/static/media/imgd.c712b977db4012fcfe9b.jpg",
+    "static/media/imgh.jpg": "/static/media/imgh.b882e8dd3d5a234e9f88.jpg",
+    "static/media/imgaa.jpg": "/static/media/imgaa.9e2aa220e12eb8032987.jpg",
+    "static/media/fa-regular-400.ttf": "/static/media/fa-regular-400.914997e1bdfc990d0897.ttf",
+    "static/media/slaidimg.jpg": "/static/media/slaidimg.63f3bd936423d098ccbd.jpg",
+    "static/media/img14.jpg": "/static/media/img14.746a3f43143053130a5c.jpg",
+    "static/media/fa-regular-400.woff2": "/static/media/fa-regular-400.89999bdf5d835c012025.woff2",
+    "static/media/work.png": "/static/media/work.367db56fa281a2fa5d35.png",
+    "static/media/welder.png": "/static/media/welder.573cfc395fa476519db1.png",
+    "static/media/java-script.png": "/static/media/java-script.78206ba65e01c7d57080.png",
+    "static/media/html-5.png": "/static/media/html-5.cfb2ba4a6b1c3de295bc.png",
+    "static/media/github2.png": "/static/media/github2.710fec039105d841e234.png",
+    "static/media/fa-v4compatibility.ttf": "/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
+    "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
+    "index.html": "/index.html",
+    "main.7ee4e5d6.css.map": "/static/css/main.7ee4e5d6.css.map",
+    "main.c8084ca5.js.map": "/static/js/main.c8084ca5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ee4e5d6.css",
+    "static/js/main.c8084ca5.js"
+  ]
+}
