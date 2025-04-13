@@ -1,8 +1,21 @@
 {
-  "short_name": "masoudnematiapp",
-  "name": "Create React App Sample",
-  "start_url": ".",
+  "short_name": "MasoudApp",
+  "name": "Masoud Nemati Personal Website",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "type": "image/x-icon",
+      "sizes": "48x48"
+    },
+    {
+      "src": "/profile-image.jpg",
+      "type": "image/jpeg",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
 }
+
