@@ -1,19 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.ef566eda.css",
-    "main.js": "/static/js/main.7ca4ac50.js",
+    "main.css": "/static/css/main.48bbb615.css",
+    "main.js": "/static/js/main.cbde15da.js",
     "static/media/images55.webp": "/static/media/images55.3a8521fa17dc8138e5a2.webp",
     "static/media/Picsart.jpg": "/static/media/Picsart.79281ae2ce559e4a0685.jpg",
     "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
     "static/media/bodyimg.jpg": "/static/media/bodyimg.90d7751e3afeeed9aa58.jpg",
     "static/media/kotlin-logo.png": "/static/media/kotlin-logo.31de0750f80405230a5f.png",
+    "static/media/photo4.jpg": "/static/media/photo4.fa2b08e92de0970fabf9.jpg",
     "static/media/img2.jpg": "/static/media/img2.374f529f0757a762162b.jpg",
     "static/media/PICNEW.png": "/static/media/PICNEW.724d6c5fa3e4b18ea978.png",
     "static/media/image.jpg": "/static/media/image.d8560e50849c8eb2ab19.jpg",
     "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.1815e00441357e01619e.ttf",
     "static/media/baner.webp": "/static/media/baner.23251895f1c680b70db6.webp",
+    "static/media/photo2.jpg": "/static/media/photo2.76c7763215e74be6cd7c.jpg",
     "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.2463b90d9a316e4e5294.woff2",
+    "static/media/photo3.jpg": "/static/media/photo3.443d4fa359482caa707f.jpg",
     "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.c210719e60948b211a12.woff2",
+    "static/media/photo5.jpg": "/static/media/photo5.496ae884670da929b272.jpg",
     "static/media/imgd.jpg": "/static/media/imgd.c712b977db4012fcfe9b.jpg",
     "static/media/imgh.jpg": "/static/media/imgh.b882e8dd3d5a234e9f88.jpg",
     "static/media/imgaa.jpg": "/static/media/imgaa.9e2aa220e12eb8032987.jpg",
@@ -31,11 +35,11 @@
     "static/media/fa-v4compatibility.ttf": "/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
     "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/index.html",
-    "main.ef566eda.css.map": "/static/css/main.ef566eda.css.map",
-    "main.7ca4ac50.js.map": "/static/js/main.7ca4ac50.js.map"
+    "main.48bbb615.css.map": "/static/css/main.48bbb615.css.map",
+    "main.cbde15da.js.map": "/static/js/main.cbde15da.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef566eda.css",
-    "static/js/main.7ca4ac50.js"
+    "static/css/main.48bbb615.css",
+    "static/js/main.cbde15da.js"
   ]
 }
